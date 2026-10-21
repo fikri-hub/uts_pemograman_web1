@@ -4,17 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Kopi Senja, tempat menikmati kopi dan suasana yang nyaman.">
-    <title>Kopi Senja | Kedai Kopi</title>
+    <meta name="description" content="Kopi Harmoni, tempat menikmati kopi pilihan dan kebersamaan.">
+    <title>Kopi Harmoni | Coffee Shop</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header class="site-header">
-        <div class="container">
-            <a class="logo" href="#beranda">Kopi Senja</a>
+    <!-- HEADER -->
+    <header class="header" id="beranda">
+        <div class="container navbar">
+            <a href="#beranda" class="logo">Kopi<span>Harmoni.</span></a>
 
-            <nav class="navigation" aria-label="Navigasi utama">
+            <nav aria-label="Navigasi utama">
                 <a href="#beranda">Beranda</a>
                 <a href="#menu">Menu</a>
                 <a href="#tentang">Tentang</a>
@@ -24,140 +25,223 @@
     </header>
 
     <main>
-        <section class="hero" id="beranda">
-            <div class="container">
-                <p class="eyebrow">SELAMAT DATANG DI KOPI SENJA</p>
-                <h1>Secangkir Kopi,<br>Sejuta Cerita.</h1>
-                <p>
-                    Nikmati aroma kopi pilihan dan suasana nyaman
-                    untuk menemani setiap cerita.
+        <!-- HERO -->
+        <section class="hero">
+            <div class="container hero-content">
+                <p class="eyebrow">SELAMAT DATANG DI KOPI HARMONI</p>
+
+                <h1>
+                    Satu Ruang,<br>
+                    Beragam Rasa,<br>
+                    <span>Satu Harmoni.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Nikmati kopi pilihan dalam suasana yang nyaman.
+                    Temukan rasa favoritmu dan ciptakan cerita bersama.
                 </p>
-                <a class="button" href="#menu">Jelajahi Menu</a>
+
+                <a href="#menu" class="button">Jelajahi Menu &rarr;</a>
             </div>
         </section>
 
-        <section class="menu-section" id="menu">
+        <!-- MENU PRODUK -->
+        <section class="section menu" id="menu">
             <div class="container">
-                <p class="eyebrow">PILIHAN FAVORIT</p>
-                <h2>Menu Kopi Kami</h2>
-                <p class="section-description">
-                    Temukan teman terbaik untuk menemani harimu.
-                </p>
+                <div class="section-heading">
+                    <p class="eyebrow">PILIHAN TERBAIK</p>
+                    <h2>Menu Favorit Kami</h2>
+                    <p>Temukan teman terbaik untuk setiap harimu.</p>
+                </div>
 
-                <div class="product-list">
+                <div class="product-grid">
+
                     <article class="product-card">
-                        <div class="product-image image-espresso"
-                             role="img" aria-label="Ilustrasi espresso"></div>
+                        <img
+                            src="images/espresso.jpg"
+                            alt="Secangkir espresso"
+                            class="product-image"
+                        >
                         <div class="product-info">
                             <h3>Espresso</h3>
                             <p>Kopi pekat dengan aroma yang kuat.</p>
-                            <p class="price">Rp18.000</p>
+                            <span class="price">Rp18.000</span>
                         </div>
                     </article>
 
                     <article class="product-card">
-                        <div class="product-image image-cappuccino"
-                             role="img" aria-label="Ilustrasi cappuccino"></div>
+                        <img
+                            src="images/cappuccino.jpg"
+                            alt="Cappuccino dengan foam susu"
+                            class="product-image"
+                        >
                         <div class="product-info">
                             <h3>Cappuccino</h3>
-                            <p>Perpaduan espresso, susu, dan foam lembut.</p>
-                            <p class="price">Rp25.000</p>
+                            <p>Espresso dengan susu dan foam lembut.</p>
+                            <span class="price">Rp25.000</span>
                         </div>
                     </article>
 
                     <article class="product-card">
-                        <div class="product-image image-latte"
-                             role="img" aria-label="Ilustrasi cafe latte"></div>
+                        <img
+                            src="images/cafe-latte.jpg"
+                            alt="Cafe latte dengan latte art"
+                            class="product-image"
+                        >
                         <div class="product-info">
                             <h3>Cafe Latte</h3>
-                            <p>Kopi susu dengan rasa yang seimbang.</p>
-                            <p class="price">Rp25.000</p>
+                            <p>Perpaduan kopi dan susu yang seimbang.</p>
+                            <span class="price">Rp25.000</span>
                         </div>
                     </article>
 
                     <article class="product-card">
-                        <div class="product-image image-kopisusu"
-                             role="img" aria-label="Ilustrasi kopi susu"></div>
-                        <div class="product-info">
-                            <h3>Kopi Susu Senja</h3>
-                            <p>Kopi susu dengan cita rasa khas kedai.</p>
-                            <p class="price">Rp20.000</p>
-                        </div>
-                    </article>
-
-                    <article class="product-card">
-                        <div class="product-image image-americano"
-                             role="img" aria-label="Ilustrasi americano"></div>
+                        <img
+                            src="images/americano.jpg"
+                            alt="Americano dengan es batu"
+                            class="product-image"
+                        >
                         <div class="product-info">
                             <h3>Americano</h3>
-                            <p>Kopi hitam ringan untuk menemani aktivitas.</p>
-                            <p class="price">Rp20.000</p>
+                            <p>Kopi hitam dengan karakter yang khas.</p>
+                            <span class="price">Rp20.000</span>
                         </div>
                     </article>
 
                     <article class="product-card">
-                        <div class="product-image image-mocha"
-                             role="img" aria-label="Ilustrasi mocha"></div>
+                        <img
+                            src="images/flat-white.jpg"
+                            alt="Flat white dengan latte art"
+                            class="product-image"
+                        >
+                        <div class="product-info">
+                            <h3>Flat White</h3>
+                            <p>Espresso dengan tekstur susu lembut.</p>
+                            <span class="price">Rp24.000</span>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <img
+                            src="images/mocha.jpg"
+                            alt="Mocha dengan krim dan taburan cokelat"
+                            class="product-image"
+                        >
                         <div class="product-info">
                             <h3>Mocha</h3>
                             <p>Perpaduan kopi, susu, dan cokelat.</p>
-                            <p class="price">Rp27.000</p>
+                            <span class="price">Rp27.000</span>
                         </div>
                     </article>
+
                 </div>
             </div>
         </section>
 
-        <section class="about-section" id="tentang">
-            <div class="container">
-                <p class="eyebrow">CERITA KAMI</p>
-                <h2>Tentang Kopi Senja</h2>
+        <!-- TENTANG KAMI -->
+        <section class="section about" id="tentang">
+            <div class="container about-content">
+                <p class="eyebrow">CERITA DI BALIK SECANGKIR KOPI</p>
+
+                <h2>Lebih dari Sekadar Kopi.</h2>
+
                 <p>
-                    Kopi Senja adalah konsep kedai kopi yang mengutamakan
-                    kualitas minuman, kenyamanan, dan kebersamaan.
-                    Kami percaya bahwa secangkir kopi dapat menjadi
-                    awal dari banyak cerita.
+                    Kopi Harmoni hadir sebagai tempat untuk beristirahat
+                    sejenak, berbagi cerita, dan menikmati kopi pilihan.
+                    Kami percaya bahwa momen sederhana menjadi lebih
+                    berarti ketika dinikmati bersama.
                 </p>
+
+                <a href="#kontak" class="text-link">
+                    Hubungi Kami &rarr;
+                </a>
             </div>
         </section>
 
-        <section class="contact-section" id="kontak">
-            <div class="container">
-                <p class="eyebrow">HUBUNGI KAMI</p>
-                <h2>Ada Cerita untuk Dibagikan?</h2>
-                <p class="section-description">
-                    Kirimkan pertanyaan atau pesan kepada kami.
-                </p>
+        <!-- KONTAK -->
+        <section class="section contact" id="kontak">
+            <div class="container contact-layout">
+
+                <div class="contact-info">
+                    <p class="eyebrow">KAMI SIAP MENDENGAR</p>
+                    <h2>Mari Terhubung.</h2>
+
+                    <p>
+                        Ada pertanyaan, saran, atau ingin mengenal
+                        Kopi Harmoni lebih dekat? Kirim pesan kepada kami.
+                    </p>
+
+                    <div class="contact-detail">
+                        <h3>Alamat</h3>
+                        <p>Isi alamat kedai kamu di sini.</p>
+                    </div>
+
+                    <div class="contact-detail">
+                        <h3>Email</h3>
+                        <p>kopiharmoni@example.com</p>
+                    </div>
+
+                    <div class="contact-detail">
+                        <h3>Jam Operasional</h3>
+                        <p>Senin–Minggu, 09.00–22.00</p>
+                    </div>
+                </div>
 
                 <form class="contact-form" action="#" method="get">
                     <div class="form-group">
                         <label for="nama">Nama lengkap</label>
-                        <input type="text" id="nama" name="nama"
-                               placeholder="Masukkan nama kamu" required>
+                        <input
+                            type="text"
+                            id="nama"
+                            name="nama"
+                            placeholder="Masukkan nama kamu"
+                            required
+                        >
                     </div>
 
                     <div class="form-group">
                         <label for="email">Alamat email</label>
-                        <input type="email" id="email" name="email"
-                               placeholder="nama@email.com" required>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="nama@email.com"
+                            required
+                        >
                     </div>
 
                     <div class="form-group">
                         <label for="pesan">Pesan</label>
-                        <textarea id="pesan" name="pesan" rows="5"
-                                  placeholder="Tuliskan pesan kamu..."
-                                  required></textarea>
+                        <textarea
+                            id="pesan"
+                            name="pesan"
+                            rows="5"
+                            placeholder="Tuliskan pesan kamu..."
+                            required
+                        ></textarea>
                     </div>
 
-                    <button class="button" type="submit">Kirim Pesan</button>
+                    <button type="submit" class="button">
+                        Kirim Pesan &rarr;
+                    </button>
                 </form>
+
             </div>
         </section>
     </main>
 
-    <footer class="site-footer">
-        <div class="container">
-            <p>&copy; 2026 Kopi Senja. Dibuat untuk UTS Web Programming 1.</p>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <a href="#beranda" class="logo">Kopi<span>Harmoni.</span></a>
+
+            <p class="footer-slogan">
+                Satu Ruang, Beragam Rasa, Satu Harmoni.
+            </p>
+
+            <p class="copyright">
+                &copy; 2026 Kopi Harmoni.
+            </p>
         </div>
     </footer>
 
