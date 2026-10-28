@@ -348,24 +348,3 @@ nav a:hover {
     }
 }
 
-@media (max-width: 480px) {
-    .product-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .hero h1 {
-        letter-spacing: -1px;
-    }
-
-    .product-image {
-        height: 220px;
-    }
-
-    .product-info p {
-        min-height: 0;
-    }
-
-    .contact-form {
-        padding: 20px;
-    }
-}
